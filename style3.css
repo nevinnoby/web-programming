@@ -1,0 +1,15 @@
+.first {
+    color: blue;
+    text-align: right;
+    text-decoration: underline;
+    font-style: italic;
+    word-spacing: 2cm;
+}
+.second{
+    background-color: yellow;
+    border: dashed blue;
+    padding: 1.5cm;
+}
+h1{
+    text-align: center;
+}
