@@ -1,8 +1,19 @@
 body{
     background-image: url(covr.jpg);
     background-size: cover;
-    color: aqua;
+    color: rgb(50, 173, 173);
+    
 }
 h1{
     color: rgb(11, 6, 47);
+}
+a{
+    font-size: larger;
+    color: brown;
+    display: grid;
+    text-decoration: none;
+    font-weight: bolder;
+}
+h3{
+    font-size: x-large;
 }

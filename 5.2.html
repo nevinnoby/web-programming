@@ -6,10 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Pallindrome or Not</h1>
+    <table border="border">
+        <tr>
+            <th>Enter the number</th>
+            <td> <input type="text" id="numb" placeholder="Enter number here"> </td>
+        </tr>
+        <tr>
+            <th colspan="2"> <button onclick="palindrome()"> Check</button> </th>
+        </tr>
+    </table>
+    <h3 id="ans"></h3>
 <script type="text/javascript">
 
-    function palindrome(n){
-        
+    function palindrome(){
+        const input = document.getElementById('numb').value;
+        const result = document.getElementById('ans');
+
+        if (input.length !== 5 ) {
+            alert("Please enter a valid five-digit number.");
+            result.textContent = "";
+        } else {
+            const reversed = input.split('').reverse().join('');
+            if (input === reversed) {
+                result.textContent = `${input} is a palindrome.`;
+            } else {
+                result.textContent = `${input} is not a palindrome.`;
+            }
+        }
+     
     }
 
 </script>    
